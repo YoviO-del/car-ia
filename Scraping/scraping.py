@@ -37,7 +37,7 @@ async def main() -> None:
         input_data =  {
             "profileScraperMode": "Profile details no email ($4 per 1k)",
             "queries": [
-                "https://www.linkedin.com/in/yapheth-gessesse/"
+                "https://www.linkedin.com/in/yovin-solomon-6521003a4"
             ]
         }
 
@@ -56,7 +56,12 @@ async def main() -> None:
                     print(bytes_chunk)
 
 
-        csv_bytes = await apify_client.dataset(dataset_id).get_items_as_bytes(item_format="csv")
+        # dataset_client = apify_client.dataset(dataset_id)
+        # items = await dataset_client.list_items()   # this fetches the actual data
+        # data = items.items                          # this is the list of JSON items
+
+        # print(data)
+        csv_bytes = await  apify_client.dataset(dataset_id).get_items_as_bytes(item_format="csv")
         csv_text = csv_bytes.decode('utf-8')
 
 

@@ -1,0 +1,90 @@
+{
+    "overall_score": 74,
+    "priority_improvements": [
+        {
+            "priority": 1,
+            "section": "Featured / projects / resume",
+            "recommendation": "The Featured section is empty. Add a polished one-page resume, GitHub, portfolio, and two or three strongest project or internship artifacts. Each project should state the problem, technologies, individual contribution, and measurable result. This gives recruiters evidence beyond profile claims."
+        },
+        {
+            "priority": 2,
+            "section": "Work experience",
+            "recommendation": "The CollabZone internship is highly relevant, but all four bullets repeat \u201cAccomplished\u201d and provide no metrics. Rewrite into 2\u20133 distinct action-led bullets and quantify verified outcomes such as emails tested, detection performance, APIs integrated, agents built, sprint cadence, latency reduction, or team size. Add other legitimate recent experiences\u2014projects, research, technical volunteering, or part-time work\u2014as they occur; do not invent experience."
+        },
+        {
+            "priority": 3,
+            "section": "Extracurricular leadership",
+            "recommendation": "Move the Computer Science Honor Society presidency into a dedicated organization or volunteer entry with dates and 2\u20133 quantified bullets. Include verified figures for camps launched, participants reached, volunteers organized, partnerships formed, or events delivered."
+        },
+        {
+            "priority": 4,
+            "section": "About and headline",
+            "recommendation": "Condense the About section to 2\u20133 high-value sentences, remove generic traits, fix the awkward final sentence, and add verified impact metrics. Remove the trailing vertical bar from the headline and use recruiter-search keywords such as \u201cComputer Science Student | AI/Software Engineering | Python | Multi-Agent Systems | Former AI Engineering Intern at CollabZone.\u201d"
+        },
+        {
+            "priority": 5,
+            "section": "Education and skills",
+            "recommendation": "Add GPA once available and strong, relevant coursework, verified honors, and Dean's List when earned. Expand and reorder skills around target roles\u2014Python, Java, C/C++, data structures, algorithms, Git, APIs, LLMs, AutoGen, and Agile\u2014only where accurate, and seek endorsements from credible collaborators."
+        },
+        {
+            "priority": 6,
+            "section": "Posts",
+            "recommendation": "No posts were accessible. Publish occasional substantive posts about projects, internship outcomes, research, hackathons, or certifications with explanation. Avoid generic announcements, standalone certificates, and inspirational filler."
+        },
+        {
+            "priority": 7,
+            "section": "Visual branding",
+            "recommendation": "The headshot and cover image exist but could not be visually verified. Ensure the headshot meets professional framing and grooming standards and the banner is a clean Virginia Tech or Washington, DC image."
+        }
+    ],
+    "sections": {
+        "connections": {
+            "score": 10,
+            "max": 10,
+            "reasoning": "The profile has 591 connections, exceeding the rubric's threshold of 500. Continue prioritizing relevant relationships with Virginia Tech alumni, engineers, recruiters, professors, and student-organization leaders rather than pursuing connection count alone.",
+            "evaluated": true
+        },
+        "headshot": {
+            "score": null,
+            "max": 10,
+            "reasoning": "A high-resolution profile photo is present, but the actual visual details cannot be reliably evaluated from the supplied URL/data. Therefore, framing, attire, grooming, background, and whether it is a social-event photo remain unverified. Confirm that it is shoulders-up, professionally dressed, well groomed, and against a clean background.",
+            "evaluated": false
+        },
+        "cover_photo": {
+            "score": null,
+            "max": 10,
+            "reasoning": "A correctly sized cover image is present, but the image content cannot be reliably assessed from the supplied URL/data. Confirm that it is a professional Virginia Tech campus or Washington, DC image, as required by the rubric, and that it remains legible behind the profile photo.",
+            "evaluated": true
+        },
+        "about": {
+            "score": 7,
+            "max": 10,
+            "reasoning": "The About section communicates a clear AI/software engineering direction, relevant tools, internship experience, and meaningful leadership. However, it exceeds the rubric's preferred 2\u20133 sentences, includes filler such as \u201cdriven, disciplined,\u201d contains awkward wording (\u201cprepare my development in my future career\u201d), and does not quantify outcomes. The supplied data also shows an empty Featured section, so no resume is evidenced. Condense it, add one or two verified metrics, correct the wording, and feature a resume or portfolio.",
+            "evaluated": true
+        },
+        "work_experience": {
+            "score": 7,
+            "max": 10,
+            "reasoning": "The CollabZone AI Engineer internship is strongly aligned with the target career and includes relevant keywords: Python, AutoGen, LLM prompt engineering, APIs, cybersecurity, Agile, and Scrum. The bullets avoid prohibited \u201csupported/assisted\u201d phrasing, but each begins with the repetitive word \u201cAccomplished,\u201d several claims overlap, and none provides measurable scale or results. Reduce to 2\u20133 differentiated bullets with verified metrics. Only one experience is listed; given the student's early career stage, this is not treated as a lack-of-experience penalty, but projects, research, technical volunteering, and future roles should be added as legitimate entries.",
+            "evaluated": true
+        },
+        "education": {
+            "score": 8,
+            "max": 10,
+            "reasoning": "Virginia Tech, the BE in Computer Science, and the expected May 2030 graduation date are clearly listed; high school and relevant societies are also included. The college description is empty, and no GPA, coursework, honors, or Dean's List information is shown. Add GPA if established and strong, plus relevant coursework and verified honors as they become available. Because the student is entering college, the absence of college honors is not penalized as missing experience, but the section should be developed over time.",
+            "evaluated": true
+        },
+        "extracurriculars": {
+            "score": 7,
+            "max": 10,
+            "reasoning": "The About section identifies the user as President of the Computer Science Honor Society and describes strong pre-professional leadership through coding camps, volunteer opportunities, and community outreach. However, no dedicated organization/volunteer entry with dates, scope, or measurable results is supplied. Create a separate entry and quantify members led, camps launched, students served, volunteers recruited, or events delivered.",
+            "evaluated": true
+        },
+        "posts": {
+            "score": null,
+            "max": 10,
+            "reasoning": "No post/activity data was supplied, so posting quality and consistency cannot be assessed. Begin posting selectively about technical projects, internship lessons, hackathons, research, or certifications with context, using concise and humble writing that explains the work, tools, result, and career relevance.",
+            "evaluated": true
+        }
+    }
+}
