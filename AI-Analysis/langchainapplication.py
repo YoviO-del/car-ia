@@ -1,4 +1,5 @@
 import os
+import csv
 import json
 from typing import Optional
 from langchain_core.tools import tool
@@ -137,7 +138,16 @@ llm = ChatOpenAI(model="gpt-5.6", api_key=api_key, temperature=0, reasoning_effo
 llm_with_tool = llm.bind_tools([json_writer])
 
 
-name_to_find = "Yovin"
+name_to_find = ""
+
+with open('listings.csv','r') as file:
+    csv_reader = csv.DictReader(file)
+
+    # csv reader is an object so you must loop through it
+    for row in csv_reader:
+        name_to_find = (row['firstName'])
+
+
 profile_doc = find_profile(name_to_find, data)
 
 if profile_doc is None:
