@@ -14,7 +14,7 @@ apify_client_logger.setLevel(logging.DEBUG)
 apify_client_logger.addHandler(logging.StreamHandler())
 
 
-async def main() -> None:
+async def main(userLinkedin) -> None:
     apify_client = ApifyClientAsync(
         token=token,
         max_retries=3,
@@ -37,7 +37,7 @@ async def main() -> None:
         input_data =  {
             "profileScraperMode": "Profile details no email ($4 per 1k)",
             "queries": [
-                "https://www.linkedin.com/in/yovin-solomon-6521003a4"
+                userLinkedin
             ]
         }
 
