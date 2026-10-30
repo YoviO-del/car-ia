@@ -9,8 +9,6 @@ logger = logging.getLogger(__name__)
 app = FastAPI()
 config = Config('.env')
 
-# MYSQL DB CONNECTION HERE
-
 
 linkedin = oauth.register(
     name='linkedin',
