@@ -53,6 +53,7 @@ async def auth_callback(request: Request, provider: str):
         user_info = response.json()
 
         email = user_info.get("email")
+        name = user_info.get("name")
         linkedin_id = user_info.get("sub")
 
         if not email or not linkedin_id:
