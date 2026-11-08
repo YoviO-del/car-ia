@@ -1,6 +1,7 @@
 import os
 import csv
 import json
+from datetime import date
 from typing import Optional
 from langchain_core.tools import tool
 from dotenv import load_dotenv
@@ -16,7 +17,9 @@ api_key = os.getenv("OPENAI_API_KEY")
 loader = CSVLoader("C:/Users/yovin/Desktop/Car-IA/listings.csv")
 data = loader.load()  # list of Document objects, one per row
 
+
 async def analyzer():
+    today_date = date.today()
 
     def find_profile(name: str, docs):
         """Return the first document whose content mentions `firstName`."""
@@ -126,11 +129,14 @@ async def analyzer():
         Rate each subsection out of 10 and then rate the whole profile out of 100. If the user is too young or
         they don’t have a certain experience don’t take it out of the score.Instead encourage the user to fill those things out.
         Your tone should be completely professional. To assess the profile, 
-        use the rubric and profile data delimited in triple backticks.
+        use the rubric and profile data delimited in triple backticks. After all of that record the todays date by using the
+        variable today_date delmited in triple backticks. 
 
         ```{profile_data}```
 
         ```{rubric}```
+
+        ```{today_date}```
         
         """
     )
